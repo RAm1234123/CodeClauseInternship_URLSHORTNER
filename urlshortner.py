@@ -6,11 +6,11 @@ def url_shortner():
     shortener = pyshorteners.Shortener()
     url_short = shortener.tinyurl.short(main_url.get())
 
-    #set the gloabal short_url
+    
     short_url.set(url_short)
 
 def copy_url():
-    #copy short url on clipboard
+    
     pyperclip.copy( short_url.get())
 
 if __name__=="__main__":
